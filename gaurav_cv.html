@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>
+            Resume
+        </title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="gaurav_cv.js"></script>
+        <link rel="stylesheet" href="gaurav_cv.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div>
+        <div class="menubar">   
+                
+                <a href="#Education"><i id="menubarElements" class="fa fa-graduation-cap" onclick="initiator(0)">
+                    <span class="tooltip">Education</span>
+                </i></a> 
+                <a href="#Skills"><i id="menubarElements" class="fa fa-language" onclick="initiator(2)">
+                        <span class="tooltip">Skills</span>
+                </i></a>
+                <a href="#Work"><i id="menubarElements" class="fa fa-briefcase" onclick="initiator(3)">
+                        <span class="tooltip">Work</span>
+                </i></a>
+                <a href="#Contact"><i id="menubarElements" onclick="initiator(1)" class="fa fa-comments">
+                        <span class="tooltip">Contact</span>
+                    </i></a>
+
+        </div>
+        <div class='home'>
+            <div class="imageText">
+                        <p style="font-size: 25px;
+                        padding-left: 211px;
+                        padding-top: 232px;">
+                            Hello I'M
+                        </p>
+                        <p style="font-size: 55px;
+                        padding-left: 211px;
+                        margin: -34px;">
+                           <strong> Gaurav Jolly</strong>
+                        </p>
+                        <p style="font-size: 25px;
+                        padding-left: 211px;">
+                            Software Engineer
+                        </p>
+                        
+            </div>
+            <div class="textUnderImage">
+                <img class="myImage" src="images/gaurav.jpeg"></br>
+                <p style="font-size: 20px">
+                    <strong>
+                        Gaurav Jolly
+                    </strong>
+                </p>
+                <p style="line-height: 19px; font-size: 14px;">
+                    B.Tech </br>
+                    Computer Science Engineering</br>
+                    gauravjolly22@gmail.com</br>
+                    +(91)8745059424
+                </p>
+                <p style="letter-spacing: 7px; padding-top: 40px;">
+                    <strong>
+                        <a href="https://www.linkedin.com/in/gaurav-jolly-77408b46/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/gaurav.jolly.22"><i class="fa fa-facebook"></i></a>
+                        <a><i class="fa fa-twitter"></i></a>
+                </strong>
+                </p>
+                <a href="gaurav_cv.pdf" download="gaurav_cv"><b>Download CV</b></a>
+            </div>
+        </div>
+        <div id="Education">
+            <div class="dots"><b>>>></b></div>
+            <div class="EducationElements">
+                <p >
+                    <b>2011-2012</b></br>
+                    Secondary School
+                </p>
+            </div>
+            <div class="dots"><b>>>></b></div>
+            <div class="EducationElements">
+                <p>
+                    <b>2013-2014</b></br>
+                     Senior Secondary
+                </p>
+            </div> 
+            <div  class="dots"><b>>>></b></div>
+            <div class="EducationElements">
+                <p>
+                    <b>2014-2018</b></br>
+                    B.Tech</br>
+                    Computer Science Engineering
+                </p>
+            </div>
+            <div class="dots"><b>>>></b></div>
+        </div>
+        <div id="Skills">
+            <p>Programming Languages</p><br>
+            <img src="images/ajax.jpeg">
+            <img src="images/c++.png">
+            <img src="images/c.jpeg">
+            <img src="images/css.png"></br>
+            <img src="images/html.png">
+            <img src="images/java.png">
+            <img src="images/javascript.jpeg">
+            <img src="images/jdbc.png"><br>
+            <img src="images/jsp.png">
+            <img src="images/mysql.png">
+            <img src="images/servlets.jpeg">
+            <img src="images/struts.jpeg">
+
+        </div>
+        <div id="Work" >
+            <div class="WorkElements1">Internships
+            <p style="font-size: 16px;padding-top: 39px;">
+                Web content developer<br>
+                Solid State Physics Laboratory (DRDO)<br>
+                June-July 2017<br>
+            </p>
+            <p style="font-size: 16px; padding-top: 51px;">
+                Summer Training<br>
+                I-Medita Learning Solutions<br>
+                June-July 2016<br>
+            </p>
+            </div>
+            <hr>
+            <div class="WorkElements2">
+                Currently
+                <p style="font-size: 16px; padding-top: 51px;">
+                  <b> Software Engineer </b> <br>
+                   2018-Today<br>
+                   QA Infotech<br>
+                   NOIDA 
+                </p>
+            </div>
+            
+        </div>
+        
+        <div id="Contact">
+            <div class="ContactElement1">
+                I'd Love To  <br> Hear From You.<br>
+                <i class="fa fa-google-plus" style="font-size: 15px; padding-top: 95px;">gauravjolly22@gmail.com</i><br>
+                <i class="fa fa-phone" style="font-size: 15px;">+91-8745059424</i><br>
+                
+            </div>
+            <div class="ContactElement2">
+                CONTACT ME<br>
+                 <form>
+                    <input id='name' type="text" placeholder="Name" required="required" ><br>
+                    <input id= 'email'type="text" placeholder="Email" required="required"><br>
+                    <input id='message' type="text" placeholder="Message" required="required"><br>
+                    <button value="Submit"><b>Submit</b></button>
+                </form>
+                    
+            </div>
+            <div class="ContactElement3">
+            <div>
+                <i class="fa fa-chevron-circle-up" style="margin-top: 85%; font-size: 56px;" onclick="toTheTop()"></i>
+            </div>
+            </div>
+        </div>
+        <p onmouseover='editable()'  onclick="editTemplate()">Edit Home Page</p>
+        <p id="popUp" style="display: none;">On Clicking this,You will enable the editing mode</p>
+ 
+    </div>
+    </body>
+</html>
